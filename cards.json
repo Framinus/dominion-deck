@@ -1,0 +1,194 @@
+[
+  {
+    "card": "adventurer",
+    "cost": 6,
+    "set": "base",
+    "attack": false,
+    "power": false,
+    "defense": false
+  },
+  {
+    "card": "advisor",
+    "cost": 4,
+    "set": "guilds",
+    "attack": false,
+    "power": false,
+    "defense": false
+  },
+  {
+    "card": "altar",
+    "cost": 6,
+    "set": "dark_ages",
+    "attack": false,
+    "power": false,
+    "defense": false
+  },
+  {
+    "card": "ambassador",
+    "cost": 3,
+    "set": "seaside",
+    "attack": true,
+    "power": false,
+    "defense": false
+  },
+  {
+    "card": "armory",
+    "cost": 4,
+    "set": "dark_ages",
+    "attack": false,
+    "power": false,
+    "defense": false
+  },
+  {
+    "card": "baker",
+    "cost": 5,
+    "set": "guilds",
+    "attack": false,
+    "power": false,
+    "defense": false
+  },
+  {
+    "card": "band of misfits",
+    "cost": 5,
+    "set": "dark_ages",
+    "attack": false,
+    "power": false,
+    "defense": false
+  },
+  {
+    "card": "bandit camp",
+    "cost": 5,
+    "set": "dark_ages",
+    "attack": false,
+    "power": false,
+    "defense": false
+  },
+  {
+    "card": "bank",
+    "cost": 7,
+    "set": "prosperity",
+    "attack": false,
+    "power": false,
+    "defense": false
+  },
+  {
+    "card": "baron",
+    "cost": 4,
+    "set": "intrigue",
+    "attack": false,
+    "power": false,
+    "defense": false
+  },
+  {
+    "card": "bazaar",
+    "cost": 5,
+    "set": "seaside",
+    "attack": false,
+    "power": false,
+    "defense": false
+  },
+  {
+    "card": "beggar",
+    "cost": 2,
+    "set": "dark_ages",
+    "attack": false,
+    "power": false,
+    "defense": true
+  },
+  {
+    "card": "bishop",
+    "cost": 4,
+    "set": "prosperity",
+    "attack": false,
+    "power": false,
+    "defense": true
+  },
+  {
+    "card": "border village",
+    "cost": 6,
+    "set": "hinterlands",
+    "attack": false,
+    "power": false,
+    "defense": false
+  },
+  {
+    "card": "bridge",
+    "cost": 4,
+    "set": "intrigue",
+    "attack": false,
+    "power": false,
+    "defense": false
+  },
+  {
+    "card": "bureaucrat",
+    "cost": 4,
+    "set": "base",
+    "attack": true,
+    "power": false,
+    "defense": false
+  },
+  {
+    "card": "butcher",
+    "cost": 5,
+    "set": "guilds",
+    "attack": false,
+    "power": false,
+    "defense": false
+  },
+  {
+    "card": "cache",
+    "cost": 5,
+    "set": "hinterlands",
+    "attack": false,
+    "power": false,
+    "defense": false
+  },
+  {
+    "card": "candlestick maker",
+    "cost": 2,
+    "set": "guilds",
+    "attack": false,
+    "power": false,
+    "defense": false
+  },
+  {
+    "card": "caravan",
+    "cost": 4,
+    "set": "seaside",
+    "attack": false,
+    "power": false,
+    "defense": false
+  },
+  {
+    "card": "cartographer",
+    "cost": 5,
+    "set": "hinterlands",
+    "attack": false,
+    "power": false,
+    "defense": false
+  },
+  {
+    "card": "catacombs",
+    "cost": 5,
+    "set": "dark_ages",
+    "attack": false,
+    "power": false,
+    "defense": false
+  },
+  {
+    "card": "cellar",
+    "cost": 2,
+    "set": "base",
+    "attack": false,
+    "power": false,
+    "defense": false
+  },
+  {
+    "card": "moat",
+    "cost": 2,
+    "set": "base",
+    "attack": false,
+    "power": false,
+    "defense": true
+  }
+]
