@@ -11,7 +11,6 @@ const build = require('./commands/build.js');
 
 const command = process.argv[2];
 const setsToAdd = process.argv.slice(3);
-const defaultData = [];
 let results;
 
 if (command === 'addSet') {
@@ -33,14 +32,3 @@ if (command === 'addSet') {
     });
   });
 }
-
-//   case 'build':
-//   {
-//     results = build(cards);
-//     break;
-//   }
-//   default:
-//   {
-//     console.log('need a command');
-//   }
-// }
