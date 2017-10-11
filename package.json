@@ -4,6 +4,8 @@
   "description": "Creates unique Dominion games based on sets owned and other parameters",
   "main": "index.js",
   "scripts": {
+    "start": "node app.js",
+    "start:dev": "nodemon app.js",
     "test": "mocha"
   },
   "repository": {
@@ -23,6 +25,7 @@
   "dependencies": {
     "body-parser": "^1.18.2",
     "cookie-parser": "^1.4.3",
-    "express": "^4.16.2"
+    "express": "^4.16.2",
+    "nodemon": "^1.12.1"
   }
 }
