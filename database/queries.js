@@ -1,13 +1,9 @@
 const pgp = require('pg-promise')()
 
-const databaseName = process.env.NODE_ENV === 'test'
-                       ? 'cards_test'
-                       : 'cards'
-
 const db = pgp({
   host: 'localhost',
   port: 5432,
-  database: databaseName,
+  database: "dominion",
 })
 
 const allCards = () => {
@@ -22,11 +18,11 @@ const createCard = ({name, cost, game, attack, power, defense}) => {
     `, {name, cost, game, attack, power, defense})
 }
 
-const cardsFromSet = (...games) => {
+const cardsFromSet = (gameArray) => {
   return db.any(`
     SELECT * FROM cards
-    WHERE game=$1;`, [...games])
-}
+    WHERE game IN ($1:csv);`, [gameArray])
+  };
 
 const createUser = (name, email, password) => {
   return db.one(`
