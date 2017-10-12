@@ -1,6 +1,7 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const cookieParser = require('cookie-parser');
+const path = require('path');
 
 const app = express();
 
@@ -8,6 +9,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cookieParser());
 
 app.set('view engine','pug');
+app.use(express.static(path.join(__dirname, 'public')))
 app.use(require('./routes/index.js'));
 app.use(require('./routes/history.js'));
 app.use(require('./routes/formsubmit.js'));
