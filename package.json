@@ -2,8 +2,10 @@
   "name": "dominion-deck",
   "version": "1.0.0",
   "description": "Creates unique Dominion games based on sets owned and other parameters",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
+    "db:create": "createdb dominion",
+    "db:drop": "dropdb dominion",
     "start": "nodemon app.js",
     "test": "mocha"
   },

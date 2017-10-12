@@ -10,7 +10,7 @@ const allCards = () => {
   return db.any("SELECT * FROM cards;")
 }
 
-const createCard = ({name, cost, game, attack, power, defense}) => {
+const createCard = ({ name, cost, game, attack, power, defense }) => {
   return db.one(`
     INSERT INTO cards (name, cost, game, attack, power, defense)
     VALUES ($1, $2, $3, $4, $5, $6)
