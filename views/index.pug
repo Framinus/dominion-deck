@@ -1,0 +1,35 @@
+extends base
+
+block content
+  h2 Welcome! Get started by choosing the games you want to use to build your set.
+  form(action='/' method='POST')
+    input(type='checkbox' id='Alchemy' name='Alchemy' value='Alchemy')
+    label(for='Alchemy') Alchemy
+    input(type='checkbox' id='adventures' name='adventures' value='adventures')
+    label(for='adventures') Adventures
+    input(type='checkbox' id='base' name='base' value='base')
+    label(for='base') Base game
+    input(type='checkbox' id='cornucopia' name='cornucopia' value='cornucopia')
+    label(for='cornucopia') Cornucopia
+    input(type='checkbox' id='dark_ages' name='dark_ages' value='dark_ages')
+    label(for='dark_ages') Dark Ages
+    input(type='checkbox' id='empires' name='empires' value='empires')
+    label(for='empires') Empires
+    input(type='checkbox' id='guilds' name='guilds' value='guilds')
+    label(for='guilds') Guilds
+    input(type='checkbox' id='hinterlands' name='hinterlands' value='hinterlands')
+    label(for='hinterlands') Hinterlands
+    input(type='checkbox' id='intrigue' name='intrigue' value='intrigue')
+    label(for='intrigue') Intrigue
+    input(type='checkbox' id='prosperity' name='prosperity' value='prosperity')
+    label(for='prosperity') Prosperity
+    input(type='checkbox' id='seaside' name='seaside' value='seaside')
+    label(for='seaside') Seaside
+    button#setButton(type='submit') Get Your Game!
+    
+    
+    
+    
+    
+  
+      

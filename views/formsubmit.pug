@@ -1,0 +1,21 @@
+extends base.pug
+  
+block content
+  
+  h2 New here, or coming back? We can't know until you log in.
+  div.auth-container
+    div.signup-container
+      form(action='/formsubmit' method='POST')
+        label chosen name
+        input(name='name' type='text' placeholder='Your name' id='signupname')
+        label email
+        input(name='email' type='text' placeholder='Email' id='signupemail')
+        label password
+        input(name='password' type='password' placeholder='password' id='signuppassword')
+        button#signupbutton(type='submit')
+    div.login-container
+      label email
+      input(name='email' type='text' placeholder='Email' id='loginemail')
+      label password
+      input(name='password' type='password' placeholder='password' id='loginpassword')
+      button#loginbutton(type='submit')
