@@ -1,36 +1,34 @@
 extends base
 
-block content
-  div.main-content-container
-    div.navbar-container
-      a(href='/') Home
-      a(href='/history') History 
-    div.main-container 
-      h2 Welcome! Get started by choosing the games you want to use to build your set.
-      form(action='/' method='POST')
-        input(type='checkbox' class='checkbox' id='Alchemy' name='Alchemy' value='Alchemy')
-        label(for='Alchemy') Alchemy
-        input(type='checkbox' class='checkbox' id='adventures' name='adventures' value='adventures')
-        label(for='adventures') Adventures
-        input(type='checkbox' class='checkbox' id='base' name='base' value='base')
-        label(for='base') Base game
-        input(type='checkbox' class='checkbox' id='cornucopia' name='cornucopia' value='cornucopia')
-        label(for='cornucopia') Cornucopia
-        input(type='checkbox' class='checkbox' id='dark_ages' name='dark_ages' value='dark_ages')
-        label(for='dark_ages') Dark Ages
-        input(type='checkbox' class='checkbox' id='empires' name='empires' value='empires')
-        label(for='empires') Empires
-        input(type='checkbox' class='checkbox' id='guilds' name='guilds' value='guilds')
-        label(for='guilds') Guilds
-        input(type='checkbox' class='checkbox' id='hinterlands' name='hinterlands' value='hinterlands')
-        label(for='hinterlands') Hinterlands
-        input(type='checkbox' class='checkbox' id='intrigue' name='intrigue' value='intrigue')
-        label(for='intrigue') Intrigue
-        input(type='checkbox' class='checkbox' id='prosperity' name='prosperity' value='prosperity')
-        label(for='prosperity') Prosperity
-        input(type='checkbox' class='checkbox' id='seaside' name='seaside' value='seaside')
-        label(for='seaside') Seaside
-        button#setButton(type='submit') Get Your Game!
+block content 
+  div.index-main-container 
+    h2 Get started by choosing the games you want to use to build your set.
+    form(action='/' method='POST')
+      input(type='checkbox' class='checkbox' id='alchemy' name='game' value='alchemy')
+      label(for='alchemy') Alchemy
+      input(type='checkbox' class='checkbox' id='adventures' name='game' value='adventures')
+      label(for='adventures') Adventures
+      input(type='checkbox' class='checkbox' id='base' name='game' value='base')
+      label(for='base') Base game
+      input(type='checkbox' class='checkbox' id='cornucopia' name='game' value='cornucopia')
+      label(for='cornucopia') Cornucopia
+      input(type='checkbox' class='checkbox' id='dark_ages' name='game' value='dark_ages')
+      label(for='dark_ages') Dark Ages
+      input(type='checkbox' class='checkbox' id='empires' name='game' value='empires')
+      label(for='empires') Empires
+      br
+      input(type='checkbox' class='checkbox' id='guilds' name='game' value='guilds')
+      label(for='guilds') Guilds
+      input(type='checkbox' class='checkbox' id='hinterlands' name='game' value='hinterlands')
+      label(for='hinterlands') Hinterlands
+      input(type='checkbox' class='checkbox' id='intrigue' name='game' value='intrigue')
+      label(for='intrigue') Intrigue
+      input(type='checkbox' class='checkbox' id='prosperity' name='game' value='prosperity')
+      label(for='prosperity') Prosperity
+      input(type='checkbox' class='checkbox' id='seaside' name='game' value='seaside')
+      label(for='seaside') Seaside
+      br
+      button#setButton(type='submit') Get Your Game!
       
     
     
