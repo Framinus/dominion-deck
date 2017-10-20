@@ -5,7 +5,8 @@ router.get('/game', (req, res) => {
   if (!name) {
     res.redirect('/formsubmit');
   } else {
-    res.render('game');
+    const finalCards = req.cookies.finalCards;
+    res.render('game', { finalCards });
   }
 });
 

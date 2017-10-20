@@ -1,7 +1,6 @@
 const router = require('express').Router();
 const cardsFromSet = require('../database/queries.js').cardsFromSet;
 const getCardsByIds = require('../database/queries.js').getCardsByIds;
-const fs = require('fs');
 
 router.get('/', (req, res) => {
   const name = req.cookies.name;
@@ -23,16 +22,21 @@ router.post('/', (req, res) => {
       const randomCards = [];
       while (randomCards.length < 10) {
         const randomCardIndex = Math.floor(Math.random() * (cardIds.length - 1));
-        randomCards.push(cardIds[randomCardIndex]);
+        if (!randomCards.includes(cardIds[randomCardIndex])) {
+          randomCards.push(cardIds[randomCardIndex]);
+        }
       }
       console.log('randomCards', randomCards);
       return randomCards;
     })
     .then((randomCards) => {
+      console.log('randomCards passed in', randomCards);
       return getCardsByIds(randomCards);
     })
     .then((finalCards) => {
-      res.render('game', { finalCards });
+      console.log('finalCards', finalCards);
+      res.cookie('finalCards', finalCards);
+      res.redirect('/game');
     })
     .catch(console.error);
 });
