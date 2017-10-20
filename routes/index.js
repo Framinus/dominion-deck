@@ -1,7 +1,7 @@
 const router = require('express').Router();
-const bcrypt = require('bcrypt');
-const verifyUser = require('../database/queries.js').verifyUser;
 const cardsFromSet = require('../database/queries.js').cardsFromSet;
+const getCardsByIds = require('../database/queries.js').getCardsByIds;
+const fs = require('fs');
 
 router.get('/', (req, res) => {
   const name = req.cookies.name;
@@ -14,11 +14,25 @@ router.get('/', (req, res) => {
 
 router.post('/', (req, res) => {
   const gameArray = req.body.game;
-  console.log(gameArray);
   cardsFromSet(gameArray)
     .then((data) => {
-      console.log(data);
-      // res.redirect('game', { cardSet });
+      const cardIds = [];
+      data.forEach((card) => {
+        cardIds.push(card.card_id);
+      });
+      const randomCards = [];
+      while (randomCards.length < 10) {
+        const randomCardIndex = Math.floor(Math.random() * (cardIds.length - 1));
+        randomCards.push(cardIds[randomCardIndex]);
+      }
+      console.log('randomCards', randomCards);
+      return randomCards;
+    })
+    .then((randomCards) => {
+      return getCardsByIds(randomCards);
+    })
+    .then((finalCards) => {
+      res.render('game', { finalCards });
     })
     .catch(console.error);
 });

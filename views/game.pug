@@ -1,0 +1,13 @@
+extends base.pug
+
+block content
+  div.index-main-container 
+    h2 This is your set!
+      div.card-container
+        each val in finalCards
+          div.card
+            div.card-name= val.name
+            div= val.game
+            div= val.cost
+            button.delete-card-button X
+    

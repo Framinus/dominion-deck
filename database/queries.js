@@ -6,17 +6,6 @@ const db = pgp({
   database: 'dominion',
 });
 
-const allCards = () => {
-  return db.any("SELECT * FROM cards;")
-};
-
-const createCard = ({ name, cost, game, attack, power, defense }) => {
-  return db.one(`
-    INSERT INTO cards (name, cost, game, attack, power, defense)
-    VALUES ($1, $2, $3, $4, $5, $6)
-    RETURNING cards.id;
-    `, { name, cost, game, attack, power, defense });
-};
 
 const cardsFromSet = (gameArray) => {
   return db.any(`
@@ -24,6 +13,11 @@ const cardsFromSet = (gameArray) => {
     WHERE game IN ($1:csv);`, [gameArray])
 };
 
+const getCardsByIds = (idArray) => {
+  return db.any(
+    `SELECT * FROM cards
+    WHERE card_id IN ($1:csv);`, [idArray]);
+};
 
 const createUser = (name, email, password) => {
   return db.one(`
@@ -38,5 +32,5 @@ const verifyUser = (email) => {
 };
 
 module.exports = {
-  db, allCards, createCard, cardsFromSet, createUser, verifyUser,
+  db, cardsFromSet, createUser, getCardsByIds, verifyUser,
 };

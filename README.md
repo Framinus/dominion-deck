@@ -1,21 +1,27 @@
 # Dominion Deck
 
-This is a custom deck randomizer program for the game Dominion. While there are other great deck builder sites for this game, I wanted one that could include parameters that my family and I use when building our own games, such as the inclusion of "Power Cards" (like "Pirate Ship", "Treasure Map", and "Goons") and of cost equity. I will build the basic deck building interface and then develop ways to sort for these categories. 
+This is a custom deck randomizer program for the game Dominion. While there are other great deck builder sites for this game, I wanted one that could include parameters that my family and I use when building our own games, such as the inclusion of "Power Cards" (like "Pirate Ship", "Treasure Map", and "Goons") and of cost equity. I will build the basic deck building interface and then develop ways to sort for these categories.
 
-### Developed features: 
+### Developed features:
 
-- Built database to store cards, saved sets, and users.
-
-### Core features to develop: 
-
+- Built database to store cards and users.
 - Authentication for users
-- Pug templates for all pages:
+- Pug templates for these pages:
   - Signup/login
   - Main page
-  - Search History
 - Algorithm for selecting ten random cards from the possible options.
+
+### Core features to develop:
+
+- Build feature that allows user to remove a card from the set and select a new random card that fits the checkbox parameters.
+- Change card selection results from a new page render to an ajax request.
+- Build out search history functionality, including a button below a rendered set that allows a user to save a set.
+- Pug template for:
+  - Search History
 
 ### Bonus features:
 
-- Allowing user to delete one card from the produced set and get another random card that fits the parameters they have already entered.
-- A way to rate the sets that come up in search history.
+- Allow user to select options other than game choice to determine sets:
+  - # of attack cards
+  - # of powerful cards (subjective, but it's my deckbuilder!)
+  - cost distribution

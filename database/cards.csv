@@ -1,0 +1,281 @@
+card,cost,set,attack,power,defense
+adventurer,6,base,FALSE,FALSE,FALSE
+advisor,4,guilds,FALSE,FALSE,FALSE
+altar,4,guilds,FALSE,FALSE,FALSE
+ambassador,3,seaside,TRUE,FALSE,FALSE
+amulet,3,adventures,FALSE,FALSE,FALSE
+archive,5,empires,TRUE,FALSE,FALSE
+armory,4,dark_ages,FALSE,FALSE,FALSE
+artificer,5,adventures,FALSE,FALSE,FALSE
+artisan,6,base,FALSE,FALSE,FALSE
+baker,5,guilds,FALSE,FALSE,FALSE
+band of misfits,5,dark_ages,FALSE,FALSE,FALSE
+bandit ,5,base,TRUE,FALSE,FALSE
+bandit camp,5,dark_ages,FALSE,FALSE,FALSE
+bank,7,prosperity,FALSE,FALSE,FALSE
+baron,4,intrigue,FALSE,FALSE,FALSE
+bazaar,5,seaside,FALSE,FALSE,FALSE
+beggar,2,dark_ages,FALSE,FALSE,FALSE
+bishop,4,prosperity,FALSE,FALSE,TRUE
+border village,6,hinterlands,FALSE,FALSE,FALSE
+bridge,4,intrigue,FALSE,FALSE,FALSE
+bridge troll,5,adventures,TRUE,FALSE,FALSE
+bureaucrat,4,base,TRUE,FALSE,FALSE
+bustling village,5,empires,FALSE,FALSE,FALSE
+butcher,5,guilds,FALSE,FALSE,FALSE
+cache,5,hinterlands,FALSE,FALSE,FALSE
+candlestick maker,2,guilds,FALSE,FALSE,FALSE
+capital,5,empires,FALSE,FALSE,FALSE
+caravan,4,seaside,FALSE,FALSE,FALSE
+caravan guard,3,adventures,FALSE,FALSE,FALSE
+cartographer,5,hinterlands,FALSE,FALSE,FALSE
+castles,3,empires,FALSE,FALSE,FALSE
+catacombs,5,dark_ages,FALSE,FALSE,FALSE
+catapult/rocks,3,empires,TRUE,FALSE,FALSE
+cellar,2,base,FALSE,FALSE,FALSE
+champion,6,adventures,FALSE,TRUE,FALSE
+chancellor,3,base,FALSE,FALSE,FALSE
+chapel,2,base,FALSE,FALSE,FALSE
+chariot race,3,empires,FALSE,FALSE,FALSE
+charm,5,empires,FALSE,FALSE,FALSE
+city,5,prosperity,FALSE,FALSE,FALSE
+coin of the realm,2,adventures,FALSE,FALSE,FALSE
+conquest,6,empires,FALSE,FALSE,FALSE
+conspirator,4,intrigue,FALSE,FALSE,FALSE
+contraband,5,prosperity,FALSE,FALSE,FALSE
+coppersmith,4,intrigue,FALSE,FALSE,FALSE
+council room,5,base,FALSE,FALSE,FALSE
+count ,5,dark_ages,FALSE,FALSE,FALSE
+counterfeit,5,dark_ages,FALSE,FALSE,FALSE
+counting house,5,prosperity,FALSE,FALSE,FALSE
+courtier,5,intrigue,FALSE,FALSE,FALSE
+courtyard,2,intrigue,FALSE,FALSE,FALSE
+crossroads,2,hinterlands,FALSE,FALSE,FALSE
+crown,5,empires,FALSE,FALSE,FALSE
+crumbling castle,4,empires,FALSE,FALSE,FALSE
+cultist,5,dark_ages,TRUE,FALSE,FALSE
+cutpurse,4,seaside,TRUE,FALSE,FALSE
+death cart,4,dark_ages,FALSE,FALSE,FALSE
+delve,2,empires,FALSE,FALSE,FALSE
+develop,3,hinterlands,FALSE,FALSE,FALSE
+diplomat,4,intrigue,FALSE,FALSE,FALSE
+disciple,5,adventures,FALSE,FALSE,FALSE
+distant lands,5,adventures,FALSE,FALSE,FALSE
+doctor,3,guilds,FALSE,FALSE,FALSE
+dominate,14,empires,FALSE,TRUE,FALSE
+duchess,2,hinterlands,FALSE,FALSE,FALSE
+duke,5,intrigue,FALSE,FALSE,FALSE
+dungeon,3,adventures,FALSE,FALSE,FALSE
+duplicate,4,adventures,FALSE,FALSE,FALSE
+embargo,2,seaside,FALSE,FALSE,FALSE
+embassy,5,hinterlands,FALSE,FALSE,FALSE
+emporium/patrician,5,empires,FALSE,FALSE,FALSE
+encampment/plunder,2,empires,FALSE,FALSE,FALSE
+enchantress,3,empires,TRUE,FALSE,FALSE
+expand,7,prosperity,FALSE,TRUE,FALSE
+expedition,3,adventures,FALSE,FALSE,FALSE
+explorer,5,seaside,FALSE,FALSE,FALSE
+fairgrounds,6,cornucopia,FALSE,FALSE,FALSE
+farmers' market,3,empires,FALSE,FALSE,FALSE
+farming village,4,cornucopia,FALSE,FALSE,FALSE
+farmland,6,hinterlands,FALSE,FALSE,FALSE
+feast,4,base,FALSE,FALSE,FALSE
+ferry,3,adventures,FALSE,FALSE,FALSE
+festival,5,base,FALSE,FALSE,FALSE
+fishing village,3,seaside,FALSE,FALSE,FALSE
+fool's gold,2,hinterlands,FALSE,FALSE,TRUE
+forager,3,dark_ages,FALSE,FALSE,FALSE
+forge,7,prosperity,FALSE,FALSE,FALSE
+fortress,4,dark_ages,FALSE,FALSE,FALSE
+fortune,8,empires,FALSE,FALSE,FALSE
+fortune teller,3,cornucopia,FALSE,FALSE,FALSE
+forum,5,empires,FALSE,FALSE,FALSE
+gardens,4,base,FALSE,FALSE,FALSE
+gear,3,adventures,FALSE,FALSE,FALSE
+ghost ship,5,seaside,FALSE,FALSE,FALSE
+giant,5,adventures,TRUE,TRUE,FALSE
+gladiator/fortune,3,empires,FALSE,FALSE,FALSE
+goons,6,prosperity,TRUE,TRUE,FALSE
+grand castle,9,empires,FALSE,FALSE,FALSE
+grand market,6,prosperity,FALSE,FALSE,FALSE
+graverobber,5,dark_ages,FALSE,FALSE,FALSE
+great hall,3,intrigue,FALSE,FALSE,FALSE
+groundskeeper,5,empires,FALSE,FALSE,FALSE
+guide,3,adventures,FALSE,FALSE,FALSE
+haggler,5,hinterlands,FALSE,FALSE,FALSE
+hamlet,2,cornucopia,FALSE,FALSE,FALSE
+harbinger,3,base,FALSE,FALSE,FALSE
+harem,6,intrigue,FALSE,FALSE,FALSE
+harvest,5,cornucopia,FALSE,FALSE,FALSE
+haunted castle,6,empires,FALSE,FALSE,FALSE
+haunted woods,5,adventures,TRUE,FALSE,FALSE
+haven,2,seaside,FALSE,FALSE,FALSE
+herald,4,guilds,FALSE,FALSE,FALSE
+hermit,3,dark_ages,FALSE,FALSE,FALSE
+hero,5,adventures,FALSE,FALSE,FALSE
+highway,5,hinterlands,FALSE,FALSE,FALSE
+hireling,6,adventures,FALSE,FALSE,FALSE
+hoard,6,prosperity,FALSE,FALSE,FALSE
+horn of plenty,5,cornucopia,FALSE,FALSE,FALSE
+horse traders,4,cornucopia,FALSE,FALSE,FALSE
+humble castle,3,empires,FALSE,FALSE,FALSE
+hunting grounds,6,dark_ages,FALSE,FALSE,FALSE
+hunting party,5,cornucopia,FALSE,FALSE,FALSE
+ill gotten gains,5,hinterlands,FALSE,FALSE,FALSE
+inn,5,hinterlands,FALSE,FALSE,FALSE
+ironmonger,4,dark_ages,FALSE,FALSE,FALSE
+ironworks,4,intrigue,FALSE,FALSE,FALSE
+island,4,seaside,FALSE,FALSE,FALSE
+jack of all trades,4,hinterlands,FALSE,FALSE,FALSE
+jester,5,cornucopia,TRUE,FALSE,FALSE
+journeyman,5,guilds,FALSE,FALSE,FALSE
+junk dealer,5,dark_ages,FALSE,FALSE,FALSE
+king's castle,10,empires,FALSE,FALSE,FALSE
+knights,5,dark_ages,TRUE,FALSE,FALSE
+labratory,5,base,FALSE,FALSE,FALSE
+legionary,5,empires,FALSE,FALSE,FALSE
+libary,5,base,FALSE,FALSE,FALSE
+lighthouse,2,seaside,FALSE,FALSE,FALSE
+loan,3,prosperity,FALSE,FALSE,FALSE
+lookout,3,seaside,FALSE,FALSE,FALSE
+lost city,5,adventures,FALSE,FALSE,FALSE
+lurker,2,intrigue,FALSE,FALSE,FALSE
+magpie,4,adventures,FALSE,FALSE,FALSE
+mandarin,5,hinterlands,FALSE,FALSE,FALSE
+marauder,4,dark_ages,TRUE,FALSE,FALSE
+margrave,5,hinterlands,TRUE,FALSE,FALSE
+market,5,base,FALSE,FALSE,FALSE
+market square,3,dark_ages,FALSE,FALSE,FALSE
+masquerade,3,intrigue,FALSE,FALSE,FALSE
+masterpiece,3,guilds,FALSE,FALSE,FALSE
+menagerie,3,cornucopia,FALSE,FALSE,FALSE
+merchant,3,base,FALSE,FALSE,FALSE
+merchant guild,5,guilds,FALSE,FALSE,FALSE
+merchant ship,5,seaside,FALSE,FALSE,FALSE
+messenger,4,adventures,FALSE,FALSE,FALSE
+militia,4,base,TRUE,FALSE,FALSE
+mill,4,intrigue,FALSE,FALSE,FALSE
+mine,5,base,FALSE,FALSE,FALSE
+mining village,4,intrigue,FALSE,FALSE,FALSE
+minion,5,intrigue,TRUE,FALSE,FALSE
+mint,5,prosperity,FALSE,FALSE,FALSE
+miser,4,adventures,FALSE,FALSE,FALSE
+mission,4,adventures,FALSE,FALSE,FALSE
+moat,2,base,FALSE,FALSE,TRUE
+moneylender,4,base,FALSE,FALSE,FALSE
+monument,4,prosperity,FALSE,FALSE,FALSE
+montebank,5,prosperity,TRUE,FALSE,FALSE
+mystic,5,dark_ages,FALSE,FALSE,FALSE
+native village,2,seaside,FALSE,FALSE,FALSE
+navigator,4,seaside,FALSE,FALSE,FALSE
+noble brigand,4,hinterlands,TRUE,FALSE,FALSE
+nobles,6,intrigue,FALSE,FALSE,FALSE
+nomad camp,4,hinterlands,FALSE,FALSE,FALSE
+oasis,3,hinterlands,FALSE,FALSE,FALSE
+opulent castle,7,empires,FALSE,FALSE,FALSE
+oracle,3,hinterlands,FALSE,FALSE,FALSE
+outpost ,5,seaside,FALSE,TRUE,FALSE
+page,2,adventures,FALSE,FALSE,FALSE
+patrol,5,intrigue,FALSE,FALSE,FALSE
+pawn,2,intrigue,FALSE,FALSE,FALSE
+pearl diver,2,seaside,FALSE,FALSE,FALSE
+peasant,2,adventures,FALSE,FALSE,FALSE
+peddler,8,prosperity,FALSE,FALSE,FALSE
+pilgramage,4,adventures,FALSE,FALSE,FALSE
+pillage,5,dark_ages,TRUE,FALSE,FALSE
+pirate ship,4,seaside,TRUE,TRUE,FALSE
+plaza,4,guilds,FALSE,FALSE,FALSE
+poacher,4,base,FALSE,FALSE,FALSE
+port,4,adventures,FALSE,FALSE,FALSE
+procession,4,dark_ages,FALSE,FALSE,FALSE
+quarry,4,prosperity,FALSE,FALSE,FALSE
+rabble,5,prosperity,TRUE,FALSE,FALSE
+raid,5,adventures,TRUE,FALSE,FALSE
+ranger,4,adventures,FALSE,FALSE,FALSE
+ratcatcher,2,adventures,FALSE,FALSE,FALSE
+rats,4,dark_ages,FALSE,FALSE,FALSE
+raze,2,adventures,FALSE,FALSE,FALSE
+rebuilld,5,dark_ages,FALSE,FALSE,FALSE
+relic,5,adventures,TRUE,FALSE,FALSE
+remake,4,cornucopia,FALSE,FALSE,FALSE
+remodel,4,base,FALSE,FALSE,FALSE
+replace,5,intrigue,TRUE,FALSE,FALSE
+ritual,4,empires,FALSE,FALSE,FALSE
+rocks,4,empires,FALSE,FALSE,FALSE
+rogue,5,dark_ages,TRUE,FALSE,FALSE
+royal carriage,5,adventures,FALSE,FALSE,FALSE
+royal seal,5,prosperity,FALSE,FALSE,FALSE
+saboteur,5,intrigue,TRUE,FALSE,FALSE
+sacrifice,4,empires,FALSE,FALSE,FALSE
+sage,3,dark_ages,FALSE,FALSE,FALSE
+salt the earth,4,empires,FALSE,FALSE,FALSE
+salvager,4,seaside,FALSE,FALSE,FALSE
+scavenger,4,dark_ages,FALSE,FALSE,FALSE
+scheme,3,hinterlands,FALSE,FALSE,FALSE
+scout,4,intrigue,FALSE,FALSE,FALSE
+scouting party,2,adventures,FALSE,FALSE,FALSE
+sea hag,4,seaside,FALSE,FALSE,FALSE
+seaway,5,adventures,FALSE,FALSE,FALSE
+secret chamber,2,intrigue,FALSE,FALSE,TRUE
+secret passage,4,intrigue,FALSE,FALSE,FALSE
+sentry,5,base,FALSE,FALSE,FALSE
+settlers/bustling village,2,empires,FALSE,FALSE,FALSE
+shanty town ,3,intrigue,FALSE,FALSE,FALSE
+silk road,4,hinterlands,FALSE,FALSE,FALSE
+small castle,5,empires,FALSE,FALSE,FALSE
+smithy,4,base,FALSE,FALSE,FALSE
+smugglers,3,seaside,FALSE,FALSE,FALSE
+soldier,3,adventures,TRUE,FALSE,FALSE
+soothsayer,5,guilds,TRUE,FALSE,FALSE
+spice merchant,4,hinterlands,FALSE,FALSE,FALSE
+sprawling castle,8,empires,FALSE,FALSE,FALSE
+spy,4,base,TRUE,FALSE,FALSE
+squire,2,dark_ages,FALSE,FALSE,FALSE
+stables,5,hinterlands,FALSE,FALSE,FALSE
+steward,3,intrigue,FALSE,FALSE,FALSE
+stonemason,2,guilds,FALSE,FALSE,FALSE
+storeroom,3,dark_ages,FALSE,FALSE,FALSE
+storyteller,5,adventures,FALSE,FALSE,FALSE
+swamp hag,5,adventures,TRUE,FALSE,FALSE
+swindler,3,intrigue,TRUE,FALSE,FALSE
+tactician,5,seaside,FALSE,TRUE,FALSE
+talisman,4,prosperity,FALSE,FALSE,FALSE
+tax,2,empires,FALSE,FALSE,FALSE
+taxman,4,guilds,TRUE,FALSE,FALSE
+teacher,6,adventures,FALSE,FALSE,FALSE
+temple,4,empires,FALSE,FALSE,FALSE
+thief,4,base,FALSE,FALSE,FALSE
+throne room,4,base,FALSE,FALSE,FALSE
+torturer,5,intrigue,TRUE,FALSE,FALSE
+tournament,4,cornucopia,FALSE,FALSE,FALSE
+trade,5,adventures,FALSE,FALSE,FALSE
+trade route,3,prosperity,FALSE,FALSE,FALSE
+trader,4,hinterlands,FALSE,FALSE,FALSE
+trading post ,5,intrigue,FALSE,FALSE,FALSE
+transmogrify,4,adventures,FALSE,FALSE,FALSE
+treasure hunter,3,adventures,FALSE,FALSE,FALSE
+treasure map,4,seaside,FALSE,TRUE,FALSE
+treasure trove,5,adventures,FALSE,FALSE,FALSE
+treasury,5,seaside,FALSE,FALSE,FALSE
+tribute,5,intrigue,FALSE,FALSE,FALSE
+tunnel,3,hinterlands,FALSE,FALSE,FALSE
+upgrade,5,intrigue,FALSE,FALSE,FALSE
+urchin,3,dark_ages,TRUE,FALSE,FALSE
+vagrant,2,dark_ages,FALSE,FALSE,FALSE
+vassal,3,base,FALSE,FALSE,FALSE
+vault,5,prosperity,FALSE,FALSE,FALSE
+venture,5,prosperity,FALSE,FALSE,FALSE
+villa,4,empires,FALSE,FALSE,FALSE
+village,3,base,FALSE,FALSE,FALSE
+wandering minstrel,4,dark_ages,FALSE,FALSE,FALSE
+warehouse,3,seaside,FALSE,FALSE,FALSE
+watchtower,3,prosperity,FALSE,FALSE,TRUE
+wharf,5,seaside,FALSE,FALSE,FALSE
+wild hunt,5,empires,FALSE,FALSE,FALSE
+wine merchant,5,adventures,FALSE,FALSE,FALSE
+wishing well,3,intrigue,FALSE,FALSE,FALSE
+witch,5,base,TRUE,FALSE,FALSE
+woodcutter,3,base,FALSE,FALSE,FALSE
+workers village,4,prosperity,FALSE,FALSE,FALSE
+workshop,3,base,FALSE,FALSE,FALSE
+young witch,4,cornucopia,TRUE,FALSE,FALSE
