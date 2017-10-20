@@ -22,6 +22,6 @@ This is a custom deck randomizer program for the game Dominion. While there are 
 ### Bonus features:
 
 - Allow user to select options other than game choice to determine sets:
-  - # of attack cards
-  - # of powerful cards (subjective, but it's my deckbuilder!)
+  - number of attack cards
+  - number of powerful cards (subjective, but it's my deckbuilder!)
   - cost distribution
