@@ -26,11 +26,9 @@ router.post('/', (req, res) => {
           randomCards.push(cardIds[randomCardIndex]);
         }
       }
-      console.log('randomCards', randomCards);
       return randomCards;
     })
     .then((randomCards) => {
-      console.log('randomCards passed in', randomCards);
       return getCardsByIds(randomCards);
     })
     .then((finalCards) => {
