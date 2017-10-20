@@ -15,7 +15,6 @@ router.post('/formsubmit', (req, res) => {
       createUser(name, email, hash);
     })
     .then((data) => {
-      console.log('data passed out of createUser ', data);
       res.cookie('name', name);
       res.redirect('/');
     })
@@ -31,6 +30,7 @@ router.post('/login', (req, res) => {
       bcrypt.compare(password, data.password)
         .then((result) => {
           if (result) {
+            res.cookie('userId', data.user_id);
             res.cookie('name', data.name);
             res.redirect('/');
           } else {

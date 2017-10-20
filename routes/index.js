@@ -32,7 +32,6 @@ router.post('/', (req, res) => {
       return getCardsByIds(randomCards);
     })
     .then((finalCards) => {
-      console.log('finalCards', finalCards);
       res.cookie('finalCards', finalCards);
       res.redirect('/game');
     })

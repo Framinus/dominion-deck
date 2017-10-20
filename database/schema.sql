@@ -17,6 +17,10 @@ CREATE TABLE users (
 
 CREATE TABLE sets (
   set_id SERIAL PRIMARY KEY,
-  user_id INTEGER REFERENCES users(user_id),
-  sets TEXT
+  user_id INTEGER
+);
+
+CREATE TABLE card_set (
+  set_id INTEGER REFERENCES sets(set_id),
+  card_id INT REFERENCES cards(card_id)
 );

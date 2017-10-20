@@ -19,10 +19,25 @@ const getCardsByIds = (idArray) => {
     WHERE card_id IN ($1:csv);`, [idArray]);
 };
 
+const saveCardSet = (setId, cardId) => {
+  return db.any(
+    `INSERT INTO card_set (set_id, card_id) VALUES ($1, $2) RETURNING *`, [setId, cardId]);
+};
+
+const saveSet = (userId) => {
+  return db.one(`
+    INSERT INTO sets (user_id) VALUES ($1) RETURNING *`, userId);
+};
+
+const getAllSetsForUser = (userId) => {
+  return db.any(
+    `SELECT * FROM sets WHERE user_id=$1`, userId);
+};
+
 const createUser = (name, email, password) => {
   return db.one(`
     INSERT INTO users (name, email, password) VALUES ($1, $2, $3) RETURNING *
-    `, [name, email, password])
+    `, [name, email, password]);
 };
 
 const verifyUser = (email) => {
@@ -32,5 +47,5 @@ const verifyUser = (email) => {
 };
 
 module.exports = {
-  db, cardsFromSet, createUser, getCardsByIds, verifyUser,
+  db, cardsFromSet, createUser, getAllSetsForUser, getCardsByIds, saveCardSet, saveSet, verifyUser,
 };

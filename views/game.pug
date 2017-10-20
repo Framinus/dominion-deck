@@ -10,5 +10,6 @@ block content
             div= val.game
             div= val.cost
     div.save-options
-      button.save-set Save Set
+      form(action='/game' method='POST')
+        button.save-set Save Set
     
