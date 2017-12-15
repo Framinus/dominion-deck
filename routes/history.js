@@ -1,21 +1,27 @@
 const router = require('express').Router();
 const getAllSetsForUser = require('../database/queries.js').getAllSetsForUser;
-const getCardsByIds = require('../database/queries.js').getCardsByIds;
+const getCardsBySet = require('../database/queries.js').getCardsBySet;
 
 router.get('/history', (req, res) => {
   const name = req.cookies.name;
   const userId = req.cookies.userId;
+  const setIds = [];
+  // this is getting all sets associated with the user.
   getAllSetsForUser(userId)
     .then((sets) => {
-      console.log('sets', sets);
-      const cardNames = [];
-      sets.forEach((card) => {
-        cardNames.push(card.name);
+      console.log('sets for user', sets);
+      sets.forEach((set) => {
+        setIds.push(set);
       });
-      return cardNames;
+      return setIds;
     })
-    .then((sets) => {
-      res.render('history', { name });
+    .then((ids) => {
+      ids.forEach((id) => {
+        return getCardsBySet(id);
+      });
+    })
+    .then((userSets) => {
+      res.render('history', { name, userSets });
     })
     .catch(console.error);
 });

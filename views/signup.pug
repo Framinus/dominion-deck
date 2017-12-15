@@ -1,0 +1,19 @@
+extends base.pug
+
+block content
+  div.loginpagetitle
+    h2 Welcome to Dominion Deck! Create a profile to save your games!
+    div.auth-container
+      div.signup-container
+        h2 Create an Account!
+        form(action='/formsubmit' method='POST')
+          div.form-group
+            label.label chosen name
+            input(name='name' type='text')
+          div.form-group
+            label.label email
+            input(name='email' type='text')
+          div.form-group
+            label.label password
+            input(name='password' type='password')
+          button#signupbutton(type='submit') Sign Up

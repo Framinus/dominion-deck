@@ -5,7 +5,7 @@ const getCardsByIds = require('../database/queries.js').getCardsByIds;
 router.get('/', (req, res) => {
   const name = req.cookies.name;
   if (!name) {
-    res.redirect('/formsubmit');
+    res.redirect('/signup');
   } else {
     res.render('index', { name });
   }

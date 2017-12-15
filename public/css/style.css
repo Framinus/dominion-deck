@@ -1,5 +1,5 @@
 body {
-  background-color: rgb(214, 200, 184);
+  background-image: url("../scrollpaper.jpg");
 }
 
 a {
@@ -42,18 +42,13 @@ ul {
   min-width: 250px;
 }
 
-.login-main-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-}
-
 .loginpagetitle {
   text-align: center;
 }
 
 .auth-container {
   align-items: center;
+  border-radius: 5px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -64,6 +59,7 @@ ul {
   align-items: center;
   background-color: #fff;
   border: 1px solid grey;
+  border-radius: 5px;
   display: flex;
   flex-direction: column;
   height: 300px;
@@ -107,6 +103,15 @@ ul {
   text-align: center;
 }
 
+.cards-main-container {
+  /*background-color: #fff;
+  border: 1px solid grey;*/
+  border-radius: 10px;
+  margin: 20px 300px;
+  padding: 50px;
+  text-align: center;
+}
+
 #setButton {
   border-radius: 5px;
   background-color: #E0E5E5;
@@ -126,6 +131,7 @@ ul {
 }
 
 .card {
+  background-color: #fff;
   border: 1px solid grey;
   border-radius: 10px;
   display: flex;
@@ -153,4 +159,9 @@ ul {
   font-size: 16px;
   height: 40px;
   width: 150px;
+}
+
+.set-display {
+  font-size: 20px;
+  margin-right: 12px;
 }
