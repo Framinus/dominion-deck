@@ -1,12 +1,12 @@
 const router = require('express').Router();
 const bcrypt = require('bcrypt');
-const createUser = require('../database/queries.js').createUser;
+const createUser = require('../database/queries').createUser;
 
-router.get('/signup', (req, res) => {
+router.get('/', (req, res) => {
   res.render('signup');
 });
 
-router.post('/signup', (req, res) => {
+router.post('/', (req, res) => {
   const { name, email, password } = req.body;
   const saltRounds = 10;
   bcrypt.hash(password, saltRounds)
@@ -21,7 +21,6 @@ router.post('/signup', (req, res) => {
       console.error(err);
     });
 });
-
 
 
 module.exports = router;

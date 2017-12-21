@@ -2,30 +2,27 @@ const router = require('express').Router();
 const saveSet = require('../database/queries.js').saveSet;
 const saveCardSet = require('../database/queries.js').saveCardSet;
 
-router.get('/game', (req, res) => {
+router.get('/', (req, res) => {
   const name = req.cookies.name;
   const userId = req.cookies.userId;
   if (!name) {
-    res.redirect('/formsubmit');
+    res.redirect('/login');
   } else {
     const finalCards = req.cookies.finalCards;
     res.render('game', { finalCards });
   }
 });
 
-router.post('/game', (req, res) => {
+router.post('/', (req, res) => {
   const userId = req.cookies.userId;
-  console.log(userId);
   const finalCards = req.cookies.finalCards;
   const cardIds = [];
   finalCards.forEach((card) => {
     cardIds.push(card.card_id);
   });
-  saveSet(userId)
+  return saveSet(userId)
     .then((saveSetData) => {
-      console.log('saved set id', saveSetData);
       const setId = saveSetData.set_id;
-      console.log(setId);
       return setId;
     })
     .then((setId) => {
@@ -36,6 +33,7 @@ router.post('/game', (req, res) => {
     })
     .then((set) => {
       console.log('set saved successfully!');
+      res.redirect('/history');
     })
     .catch(console.error);
 });

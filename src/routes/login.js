@@ -1,8 +1,12 @@
 const router = require('express').Router();
 const bcrypt = require('bcrypt');
-const verifyUser = require('../database/queries.js').verifyUser;
+const verifyUser = require('../database/queries').verifyUser;
 
-router.post('/login', (req, res) => {
+router.get('/', (req, res) => {
+  res.render('login');
+});
+
+router.post('/', (req, res) => {
   const { email, password } = req.body;
   verifyUser(email)
     .then((data) => {
@@ -18,6 +22,5 @@ router.post('/login', (req, res) => {
         });
     });
 });
-
 
 module.exports = router;

@@ -2,6 +2,12 @@ const router = require('express').Router();
 const cardsFromSet = require('../database/queries.js').cardsFromSet;
 const getCardsByIds = require('../database/queries.js').getCardsByIds;
 
+const signup = require('./signup');
+const login = require('./login');
+const logout = require('./logout');
+const game = require('./game');
+const history = require('./history');
+
 router.get('/', (req, res) => {
   const name = req.cookies.name;
   if (!name) {
@@ -38,5 +44,10 @@ router.post('/', (req, res) => {
     .catch(console.error);
 });
 
+router.use('/signup', signup);
+router.use('/login', login);
+router.use('/logout', logout);
+router.use('/game', game);
+router.use('/history', history);
 
 module.exports = router;

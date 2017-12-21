@@ -3,16 +3,18 @@ html(lang="en")
   head
     meta(charset="UTF-8")
     title Dominion Deck Builder
-    link(rel='stylesheet' type='text/css' href='css/style.css')
+    link(rel='stylesheet' type='text/css' href='/css/style.css')
+    link(href="https://fonts.googleapis.com/css?family=Spectral+SC" rel="stylesheet")
     script(src="https://code.jquery.com/jquery-3.2.1.js")
-    script
-      include ../public/frontend/frontend.js
+    script(src="/frontend/frontend.js")
   body
     div.navbar-container
+      div.navbar-left
         a(href='/') Home
         a(href='/history') History
+      div.navbar-right
         form(action='/logout' method='POST')
           button#logout(type='submit') Logout
-    div.header 
+    div.header
       h1#title Dominion Deck Builder
     block content
