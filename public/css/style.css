@@ -178,7 +178,7 @@ button {
 }
 
 .set-title {
-  font-weight: bold;
+  margin: 0 10px;
 }
 
 .set-display {
@@ -193,5 +193,15 @@ button {
 .search-results {
   border: 1px solid grey;
   background-color: #fff;
-  margin: 30px;
+  margin: 30px 80px;
+}
+
+.set-row {
+  border: 1px solid grey;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  font-family: arial;
+  justify-content: flex-start;
+  padding: 20px;
 }

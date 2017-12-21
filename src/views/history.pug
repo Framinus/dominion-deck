@@ -3,8 +3,8 @@ extends base.pug
 block content
   h2.history-header Hi, #{name}! Here are the games you've built.
   div.search-results
-    ul
-      each val in sets
-        li
-          span.set-title= val.set
-          span.set-display= val.cards
+    each set in sets
+      div.set-row
+        span.set-title #{set.set}
+          each val in set.cards
+            span.set-display #{val}
