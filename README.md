@@ -4,20 +4,15 @@ This is a custom deck randomizer program for the game Dominion. While there are 
 
 ### Developed features:
 
-- Built database to store cards and users.
-- Authentication for users
-- Pug templates for these pages:
-  - Signup/login
-  - Main page
-- Algorithm for selecting ten random cards from the possible options.
+- All cards for every Dominion expansion (excluding Nocturne) are included in the database.
+- Users can log in and view their own search history. 
+- Users can select any number of Dominion expansions and get a randomized set of ten decks to use for their game, and choose to save those sets to their history.
 
 ### Core features to develop:
 
-- Build feature that allows user to remove a card from the set and select a new random card that fits the checkbox parameters.
-- Change card selection results from a new page render to an ajax request.
-- Build out search history functionality, including a button below a rendered set that allows a user to save a set.
-- Pug template for:
-  - Search History
+- Allow users to delete cards from rendered sets that they don't want to play with, and re-run the search algorithm to replace only those cards. (So if the user liked 7 of the 10 rendered cards, they could click on the 3 unwanted cards to delete them, and click a button to rerun the algorithm for 3 cards.) 
+- Search histories can be edited with added comments about the game after the user has played it.
+- User can see not only their own search history, but saved games by all users with comments.
 
 ### Bonus features:
 
@@ -25,3 +20,17 @@ This is a custom deck randomizer program for the game Dominion. While there are 
   - number of attack cards
   - number of powerful cards (subjective, but it's my deckbuilder!)
   - cost distribution
+  
+### Frameworks used, now and future:
+
+Currently, this site is built in Node and Express, with Pug templating, a PostgreSQL database, and a little frontend JavaScript.
+
+I have discovered the magic of React, so the structure of this site will be changing to a RESTful API on the backend (still built with Node, Express and Postgres) and React on the frontend. Stay tuned!
+
+### Instructions
+
+If you want to play with the code in its current state:
+
+- Fork and clone the repository. 
+- Run NPM install to get the required packages.
+- ```npm run db:create```, ```npm run db:schema``` and ```npm run db:data``` to create the database, load the schema, and seed the database. Card data is in a .csv file. 
