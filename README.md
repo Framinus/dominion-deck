@@ -1,6 +1,6 @@
 # Dominion Deck
 
-This is a custom deck randomizer program for the game Dominion. While there are other great deck builder sites for this game, I wanted one that could include parameters that my family and I use when building our own games, such as the inclusion of "Power Cards" (like "Pirate Ship", "Treasure Map", and "Goons") and of cost equity. I will build the basic deck building interface and then develop ways to sort for these categories.
+This is a custom deck randomizer program for the game Dominion. While there are other great deck builder sites for this game, I wanted to create one that allowed users to reject a card or two without having to re-draw for a whole new set, and also allowed users to save sets, leave comments, and view their own search history over time. My family plays this game quite frequently and owns most of the expansions, so we are always looking for great new game combinations!
 
 ### Developed features:
 
