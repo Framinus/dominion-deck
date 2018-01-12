@@ -2,7 +2,7 @@
 
 This is a custom deck randomizer program for the game Dominion. While there are other great deck builder sites for this game, I wanted to create one that allowed users to reject a card or two without having to re-draw for a whole new set, and also allowed users to save sets, leave comments, and view their own search history over time. My family plays this game quite frequently and owns most of the expansions, so we are always looking for great new game combinations!
 
-![Dominion Game Input Page](https://github.com/Framinus/dominion-deck/blob/master/public/images/dominion-deck-sample.png)
+![Dominion Game Input Page](https://github.com/Framinus/dominion-deck/blob/master/public/images/dominion-deck-teaser.png)
 
 ### Developed features:
 
