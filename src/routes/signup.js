@@ -14,7 +14,9 @@ router.post('/', (req, res) => {
       createUser(name, email, hash);
     })
     .then((data) => {
-      res.cookie('name', name);
+      req.session.user = data.user_id;
+      req.session.name = data.name;
+      // res.cookie('name', name);
       res.redirect('/');
     })
     .catch((err) => {

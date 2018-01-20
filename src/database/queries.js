@@ -1,10 +1,4 @@
-const pgp = require('pg-promise')();
-
-const db = pgp({
-  host: 'localhost',
-  port: 5432,
-  database: 'dominion',
-});
+const db = require('./db')
 
 // creates a user in the database.
 const createUser = (name, email, password) => {

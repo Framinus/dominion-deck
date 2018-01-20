@@ -1,3 +1,4 @@
 set.json
 node_modules
 out
+.env

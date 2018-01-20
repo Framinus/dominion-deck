@@ -3,19 +3,19 @@ const saveSet = require('../database/queries.js').saveSet;
 const saveCardSet = require('../database/queries.js').saveCardSet;
 
 router.get('/', (req, res) => {
-  const name = req.cookies.name;
-  const userId = req.cookies.userId;
+  const name = req.session.name;
+  const userId = req.session.user;
   if (!name) {
     res.redirect('/login');
   } else {
-    const finalCards = req.cookies.finalCards;
+    const finalCards = req.session.finalCards;
     res.render('game', { finalCards });
   }
 });
 
 router.post('/', (req, res) => {
-  const userId = req.cookies.userId;
-  const finalCards = req.cookies.finalCards;
+  const userId = req.session.user;
+  const finalCards = req.session.finalCards;
   const cardIds = [];
   finalCards.forEach((card) => {
     cardIds.push(card.card_id);

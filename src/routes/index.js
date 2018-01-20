@@ -9,7 +9,7 @@ const game = require('./game');
 const history = require('./history');
 
 router.get('/', (req, res) => {
-  const name = req.cookies.name;
+  const name = req.session.name;
   if (!name) {
     res.redirect('/signup');
   } else {
@@ -38,7 +38,7 @@ router.post('/', (req, res) => {
       return getCardsByIds(randomCards);
     })
     .then((finalCards) => {
-      res.cookie('finalCards', finalCards);
+      req.session.finalCards = finalCards;
       res.redirect('/game');
     })
     .catch(console.error);

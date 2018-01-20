@@ -5,7 +5,7 @@ const getCardsBySet = require('../database/queries.js').getCardsBySet;
 
 const getUserSets = (req, res, next) => {
   const setArray = [];
-  const userId = req.cookies.userId;
+  const userId = req.session.user;
   return getAllSetsForUser(userId)
     .then((sets) => {
       sets.forEach((set, index) => {
@@ -26,7 +26,7 @@ const getUserSets = (req, res, next) => {
 };
 
 const getCards = (req, res, next) => {
-  const name = req.cookies.name;
+  const name = req.session.name;
   const setArray = req.setData;
   setArray.forEach((set, index) => {
     return getCardsBySet(set.set)
