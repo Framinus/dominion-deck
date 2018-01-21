@@ -8,6 +8,7 @@ const logout = require('./logout');
 const game = require('./game');
 const history = require('./history');
 
+// main page. if the user is logged in, they get the view.
 router.get('/', (req, res) => {
   const name = req.session.name;
   if (!name) {
@@ -17,8 +18,10 @@ router.get('/', (req, res) => {
   }
 });
 
+// my frontend is sending the data to the post request as an array with the key of game and the property of an array of the games. that is how the gameArray variable is able to pull the correct information out of req.body.game.
 router.post('/', (req, res) => {
   const gameArray = req.body.game;
+  console.log(gameArray)
   cardsFromSet(gameArray)
     .then((data) => {
       const cardIds = [];

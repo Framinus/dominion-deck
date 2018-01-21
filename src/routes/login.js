@@ -15,8 +15,6 @@ router.post('/', (req, res) => {
           if (result) {
             req.session.user = data.user_id;
             req.session.name = data.name;
-            // res.cookie('userId', data.user_id);
-            // res.cookie('name', data.name);
             res.redirect('/');
           } else {
             res.render('/login', { errorMessage: 'Incorrect email or password' });
