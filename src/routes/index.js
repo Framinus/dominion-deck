@@ -1,6 +1,7 @@
 const router = require('express').Router();
 const cardsFromSet = require('../database/queries.js').cardsFromSet;
 const getCardsByIds = require('../database/queries.js').getCardsByIds;
+const randomizer = require('../helpers.js').randomizer;
 
 const signup = require('./signup');
 const login = require('./login');
@@ -28,14 +29,7 @@ router.post('/', (req, res) => {
       data.forEach((card) => {
         cardIds.push(card.card_id);
       });
-      const randomCards = [];
-      while (randomCards.length < 10) {
-        const randomCardIndex = Math.floor(Math.random() * (cardIds.length - 1));
-        if (!randomCards.includes(cardIds[randomCardIndex])) {
-          randomCards.push(cardIds[randomCardIndex]);
-        }
-      }
-      return randomCards;
+      return randomizer(cardIds, 10)
     })
     .then((randomCards) => {
       return getCardsByIds(randomCards);
