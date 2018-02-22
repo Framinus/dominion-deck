@@ -13,7 +13,7 @@ const history = require('./history');
 router.get('/', (req, res) => {
   const name = req.session.name;
   if (!name) {
-    res.redirect('/signup');
+    res.redirect('/login');
   } else {
     res.render('index', { name });
   }
@@ -22,7 +22,6 @@ router.get('/', (req, res) => {
 // my frontend is sending the data to the post request as an array with the key of game and the property of an array of the games. that is how the gameArray variable is able to pull the correct information out of req.body.game.
 router.post('/', (req, res) => {
   const gameArray = req.body.game;
-  console.log(gameArray)
   cardsFromSet(gameArray)
     .then((data) => {
       const cardIds = [];

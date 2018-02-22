@@ -20,15 +20,16 @@ router.post('/', (req, res) => {
   finalCards.forEach((card) => {
     cardIds.push(card.card_id);
   });
+  // trying to parse out what I did here - it looks like i push the ids of the finalCards into a new array, and then call saveSet with the userId. Why am I taking this step?
   return saveSet(userId)
     .then((saveSetData) => {
       const setId = saveSetData.set_id;
       return setId;
     })
+    // then I am taking that setId and using it to save a set. why am I not just creating the set and saving it all at once? i think it has to do with how my sets are getting displayed to the page. 
     .then((setId) => {
       cardIds.forEach((card) => {
         saveCardSet(setId, card);
-        console.log(card);
       });
     })
     .then((set) => {
